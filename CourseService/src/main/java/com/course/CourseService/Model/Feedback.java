@@ -12,12 +12,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-public class Course {
+public class Feedback {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Course_id;
-    private String title;
+    private Long feedbackId;
+    private Long userId;
+    private Long courseId;
     private String description;
-    private String duration;
-    private int module; // no of modules in courses
+    private Integer rating;
 }

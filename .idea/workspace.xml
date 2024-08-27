@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2e833d5-39cd-47c2-a316-a9f57e7c30de" name="Changes" comment="" />
+    <list default="true" id="e2e833d5-39cd-47c2-a316-a9f57e7c30de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +24,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -34,13 +44,29 @@
     "Application.ProgressServiceApplication.executor": "Run",
     "Application.UserServiceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files/Java/jdk-21.0.2",
+    "last_opened_file_path": "C:/Users/284724/Documents/Cap_Project/UserService/src/main/java/com/user/UserService",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\284724\Documents\Cap_Project\UserService\src\main\java\com\user\UserService" />
+      <recent name="C:\Users\284724\Documents\Cap_Project\ProgressService\src\main\java\com\progress\ProgressService" />
+      <recent name="C:\Users\284724\Documents\Cap_Project\FeedbackService\src\main\java\com\feedback\FeedbackService" />
+      <recent name="C:\Users\284724\Documents\Cap_Project\EnrolmentService\src\main\java\com\enrolment\EnrolmentService" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.progress.ProgressService.Model" />
+      <recent name="com.enrolment.EnrolmentService.Model" />
+      <recent name="com.course.CourseService.Model" />
+      <recent name="com.user.UserService.Model" />
+      <recent name="com.feedback.FeedbackService.Model" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.FeedbackServiceApplication">
     <configuration name="CourseServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.course.CourseService.CourseServiceApplication" />
@@ -127,5 +153,16 @@
       <updated>1724566516948</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -5,11 +5,18 @@ import com.progress.ProgressService.Service.ProgressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/progress")
 public class ProgressController {
     @Autowired
     private ProgressService progressService;
+
+    @GetMapping
+    public List<Progress> getAllProgressRecords() {
+        return progressService.getAllProgressRecords();
+    }
 
     @GetMapping("/{progressId}")
     public Progress getProgressById(@PathVariable Long progressId) {

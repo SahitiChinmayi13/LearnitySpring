@@ -12,12 +12,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-public class Course {
+public class Progress {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Course_id;
-    private String title;
-    private String description;
-    private String duration;
-    private int module; // no of modules in courses
+    private Long progressId;
+    private Long userId;
+    private Long courseId;
+    private String status;
 }

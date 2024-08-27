@@ -7,11 +7,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/enrollments")
 public class EnrolmentController {
     @Autowired
     private EnrolmentService enrollmentService;
+
+    @GetMapping
+    public List<Enrolment> getAllEnrolments() {
+        return enrollmentService.getAllEnrolments();
+    }
 
     @GetMapping("/{id}")
     public Enrolment getEnrollmentById(@PathVariable Long id) {

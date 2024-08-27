@@ -8,16 +8,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
+import java.time.LocalDate;
+
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
 @Entity
-public class Course {
+public class Enrolment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Course_id;
-    private String title;
-    private String description;
-    private String duration;
-    private int module; // no of modules in courses
+    private Long enrol_id;
+    private Long userId;
+    private Long courseId;
+    private LocalDate startDate;
 }

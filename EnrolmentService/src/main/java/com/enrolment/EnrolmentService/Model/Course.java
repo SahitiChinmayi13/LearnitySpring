@@ -1,4 +1,5 @@
-package com.course.CourseService.Model;
+package com.enrolment.EnrolmentService.Model;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
