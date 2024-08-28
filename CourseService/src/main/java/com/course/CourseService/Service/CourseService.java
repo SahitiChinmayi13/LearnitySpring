@@ -19,21 +19,15 @@ public class CourseService {
     @Autowired
     private RestTemplate restTemplate;
 
-    private final String ENROLMENT_SERVICE_URL = "http://localhost:8082/enrolments";
-    private final String PROGRESS_SERVICE_URL = "http://localhost:8083/progress";
-    private final String FEEDBACK_SERVICE_URL = "http://localhost:8084/feedback";
+    //private final String ENROLMENT_SERVICE_URL = "http://localhost:8083/enrolments";
+    //private final String PROGRESS_SERVICE_URL = "http://localhost:8084/progress";
+    //private final String FEEDBACK_SERVICE_URL = "http://localhost:8085/feedback";
 
-    public Enrolment getEnrolmentsByCourseId(Long courseId) {
-        return restTemplate.getForObject(ENROLMENT_SERVICE_URL + "/course/" + courseId, Enrolment.class);
-    }
 
-    public Progress getProgressByCourseId(Long courseId) {
-        return restTemplate.getForObject(PROGRESS_SERVICE_URL + "/course/" + courseId, Progress.class);
-    }
-
-    public Feedback getFeedbackByCourseId(Long courseId) {
-        return restTemplate.getForObject(FEEDBACK_SERVICE_URL + "/course/" + courseId, Feedback.class);
-    }
+//    public List<Feedback> getFeedbackByCourseId(Long courseId) {
+//        return restTemplate.getForObject(FEEDBACK_SERVICE_URL + "/course/" + courseId, List.class);
+//    }
+//
 
     public Course getCourseById(Long id) {
         return courseRepository.findById(id).orElse(null);

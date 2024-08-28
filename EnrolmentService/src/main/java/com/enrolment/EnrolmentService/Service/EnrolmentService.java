@@ -19,27 +19,27 @@ public class EnrolmentService {
     @Autowired
     private RestTemplate restTemplate;
 
-    private final String USER_SERVICE_URL = "http://localhost:8081/users";
-    private final String COURSE_SERVICE_URL = "http://localhost:8082/courses";
-    private final String PROGRESS_SERVICE_URL = "http://localhost:8083/progress";
-
-    // Get user details by enrolment
-    public User getUserByEnrolment(Long enrolId) {
-        Enrolment enrolment = restTemplate.getForObject("/enrolments/" + enrolId, Enrolment.class);
-        return restTemplate.getForObject(USER_SERVICE_URL + "/" + enrolment.getUserId(), User.class);
-    }
-
-    // Get course details by enrolment
-    public Course getCourseByEnrolment(Long enrolId) {
-        Enrolment enrolment = restTemplate.getForObject("/enrolments/" + enrolId, Enrolment.class);
-        return restTemplate.getForObject(COURSE_SERVICE_URL + "/" + enrolment.getCourseId(), Course.class);
-    }
-
-    // Get progress by enrolment
-    public Progress getProgressByEnrolment(Long enrolId) {
-        Enrolment enrolment = restTemplate.getForObject("/enrolments/" + enrolId, Enrolment.class);
-        return restTemplate.getForObject(PROGRESS_SERVICE_URL + "/course/" + enrolment.getCourseId() + "/user/" + enrolment.getUserId(), Progress.class);
-    }
+//    private final String USER_SERVICE_URL = "http://localhost:8082/users";
+//    private final String COURSE_SERVICE_URL = "http://localhost:8083/courses";
+//    private final String PROGRESS_SERVICE_URL = "http://localhost:8084/progress";
+//
+//    // Get user details by enrolment
+//    public User getUserByEnrolment(Long enrolId) {
+//        Enrolment enrolment = restTemplate.getForObject("/enrolments/" + enrolId, Enrolment.class);
+//        return restTemplate.getForObject(USER_SERVICE_URL + "/" + enrolment.getUserId(), User.class);
+//    }
+//
+//    // Get course details by enrolment
+//    public Course getCourseByEnrolment(Long enrolId) {
+//        Enrolment enrolment = restTemplate.getForObject("/enrolments/" + enrolId, Enrolment.class);
+//        return restTemplate.getForObject(COURSE_SERVICE_URL + "/" + enrolment.getCourseId(), Course.class);
+//    }
+//
+//    // Get progress by enrolment
+//    public Progress getProgressByEnrolment(Long enrolId) {
+//        Enrolment enrolment = restTemplate.getForObject("/enrolments/" + enrolId, Enrolment.class);
+//        return restTemplate.getForObject(PROGRESS_SERVICE_URL + "/course/" + enrolment.getCourseId() + "/user/" + enrolment.getUserId(), Progress.class);
+//    }
 
     public List<Enrolment> getAllEnrolments() {
         return enrollmentRepository.findAll();

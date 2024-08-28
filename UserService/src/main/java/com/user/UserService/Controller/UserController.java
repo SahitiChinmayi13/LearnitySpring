@@ -1,5 +1,8 @@
 package com.user.UserService.Controller;
 
+import com.user.UserService.Model.Course;
+import com.user.UserService.Model.Feedback;
+import com.user.UserService.Model.Progress;
 import com.user.UserService.Model.User;
 import com.user.UserService.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +19,21 @@ public class UserController {
     @GetMapping("/{id}")
     public User getUserById(@PathVariable Long id) {
         return userService.getUserById(id);
+    }
+
+    @GetMapping("/coursedetail/{id}")
+    public Course getUserCourseDetail(@PathVariable Long id){
+        return userService.getCourseDetailsForUser(id);
+    }
+
+    @GetMapping("/userprogress/{id}")
+    public Progress getUserProgress(@PathVariable Long id){
+        return userService.getProgressByUserId(id);
+    }
+
+    @GetMapping("/userfeedback/{id}")
+    public Feedback getUserFeedback(@PathVariable Long id){
+        return userService.getFeedbackByUserId(id);
     }
 
     @GetMapping()

@@ -17,10 +17,10 @@ public class UserService {
     @Autowired
     private RestTemplate restTemplate;
 
-    private final String COURSE_SERVICE_URL = "http://localhost:8081/courses";
-    private final String ENROLMENT_SERVICE_URL = "http://localhost:8082/enrolments";
-    private final String PROGRESS_SERVICE_URL = "http://localhost:8083/progress";
-    private final String FEEDBACK_SERVICE_URL = "http://localhost:8084/feedback";
+    private final String COURSE_SERVICE_URL = "http://localhost:8082/courses";
+    private final String ENROLMENT_SERVICE_URL = "http://localhost:8083/enrolments";
+    private final String PROGRESS_SERVICE_URL = "http://localhost:8084/progress";
+    private final String FEEDBACK_SERVICE_URL = "http://localhost:8085/feedback";
 
     public Course getCourseDetailsForUser(Long userId) {
         // Assuming enrolment service provides courseId for the user
@@ -28,9 +28,6 @@ public class UserService {
         return restTemplate.getForObject(COURSE_SERVICE_URL + "/" + enrolment.getCourseId(), Course.class);
     }
 
-    public Enrolment getEnrolmentByUserId(Long userId) {
-        return restTemplate.getForObject(ENROLMENT_SERVICE_URL + "/user/" + userId, Enrolment.class);
-    }
 
     public Progress getProgressByUserId(Long userId) {
         return restTemplate.getForObject(PROGRESS_SERVICE_URL + "/user/" + userId, Progress.class);

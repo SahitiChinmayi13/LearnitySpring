@@ -15,23 +15,6 @@ public class FeedbackService {
     @Autowired
     private FeedbackRepository feedbackRepository;
 
-    @Autowired
-    private RestTemplate restTemplate;
-
-    private final String USER_SERVICE_URL = "http://localhost:8081/users";
-    private final String COURSE_SERVICE_URL = "http://localhost:8082/courses";
-
-    // Example method to get user details for feedback
-    public User getUserByFeedback(Long feedbackId) {
-        Feedback feedback = restTemplate.getForObject("/feedback/" + feedbackId, Feedback.class);
-        return restTemplate.getForObject(USER_SERVICE_URL + "/" + feedback.getUserId(), User.class);
-    }
-
-    // Example method to get course details for feedback
-    public Course getCourseByFeedback(Long feedbackId) {
-        Feedback feedback = restTemplate.getForObject("/feedback/" + feedbackId, Feedback.class);
-        return restTemplate.getForObject(COURSE_SERVICE_URL + "/" + feedback.getCourseId(), Course.class);
-    }
 
     public List<Feedback> getAllFeedback() {
         return feedbackRepository.findAll();

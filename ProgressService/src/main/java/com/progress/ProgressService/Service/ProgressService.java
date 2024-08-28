@@ -16,30 +16,7 @@ public class ProgressService {
     @Autowired
     private ProgressRepository progressRepository;
 
-    @Autowired
-    private RestTemplate restTemplate;
 
-    private final String USER_SERVICE_URL = "http://localhost:8081/users";
-    private final String COURSE_SERVICE_URL = "http://localhost:8082/courses";
-    private final String ENROLMENT_SERVICE_URL = "http://localhost:8082/enrolments";
-
-    // Get user details by progress
-    public User getUserByProgress(Long progressId) {
-        Progress progress = restTemplate.getForObject("/progress/" + progressId, Progress.class);
-        return restTemplate.getForObject(USER_SERVICE_URL + "/" + progress.getUserId(), User.class);
-    }
-
-    // Get course details by progress
-    public Course getCourseByProgress(Long progressId) {
-        Progress progress = restTemplate.getForObject("/progress/" + progressId, Progress.class);
-        return restTemplate.getForObject(COURSE_SERVICE_URL + "/" + progress.getCourseId(), Course.class);
-    }
-
-    // Get enrolment details by progress
-    public Enrolment getEnrolmentByProgress(Long progressId) {
-        Progress progress = restTemplate.getForObject("/progress/" + progressId, Progress.class);
-        return restTemplate.getForObject(ENROLMENT_SERVICE_URL + "/course/" + progress.getCourseId() + "/user/" + progress.getUserId(), Enrolment.class);
-    }
 
     public List<Progress> getAllProgressRecords() {
         return progressRepository.findAll();
