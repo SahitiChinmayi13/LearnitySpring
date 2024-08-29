@@ -9,6 +9,10 @@
         <option value="$PROJECT_DIR$/EnrolmentService/pom.xml" />
         <option value="$PROJECT_DIR$/ProgressService/pom.xml" />
         <option value="$PROJECT_DIR$/FeedbackService/pom.xml" />
+        <option value="$PROJECT_DIR$/EurekaDiscovery/pom.xml" />
+        <option value="$PROJECT_DIR$/eurekaregistryservice/pom.xml" />
+        <option value="$PROJECT_DIR$/ApiGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/lbgateway/pom.xml" />
       </list>
     </option>
   </component>

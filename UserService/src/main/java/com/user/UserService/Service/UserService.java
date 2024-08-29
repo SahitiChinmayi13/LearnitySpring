@@ -18,23 +18,23 @@ public class UserService {
     private RestTemplate restTemplate;
 
     private final String COURSE_SERVICE_URL = "http://localhost:8082/courses";
-    private final String ENROLMENT_SERVICE_URL = "http://localhost:8083/enrolments";
-    private final String PROGRESS_SERVICE_URL = "http://localhost:8084/progress";
-    private final String FEEDBACK_SERVICE_URL = "http://localhost:8085/feedback";
+    private final String ENROLMENT_SERVICE_URL = "http://localhost:8083/enrollments/ue";
+    private final String PROGRESS_SERVICE_URL = "http://localhost:8084/progress/up";
+    private final String FEEDBACK_SERVICE_URL = "http://localhost:8085/feedback/uf";
 
     public Course getCourseDetailsForUser(Long userId) {
         // Assuming enrolment service provides courseId for the user
-        Enrolment enrolment = restTemplate.getForObject(ENROLMENT_SERVICE_URL + "/user/" + userId, Enrolment.class);
+        Enrolment enrolment = restTemplate.getForObject(ENROLMENT_SERVICE_URL + "/" + userId, Enrolment.class);
         return restTemplate.getForObject(COURSE_SERVICE_URL + "/" + enrolment.getCourseId(), Course.class);
     }
 
 
     public Progress getProgressByUserId(Long userId) {
-        return restTemplate.getForObject(PROGRESS_SERVICE_URL + "/user/" + userId, Progress.class);
+        return restTemplate.getForObject(PROGRESS_SERVICE_URL + "/" + userId, Progress.class);
     }
 
-    public Feedback getFeedbackByUserId(Long userId) {
-        return restTemplate.getForObject(FEEDBACK_SERVICE_URL + "/user/" + userId, Feedback.class);
+    public List<Feedback> getFeedbackByUserId(Long userId) {
+        return restTemplate.getForObject(FEEDBACK_SERVICE_URL + "/" + userId, List.class);
     }
 
     public User getUserById(Long id) {

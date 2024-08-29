@@ -13,6 +13,11 @@ public class ProgressController {
     @Autowired
     private ProgressService progressService;
 
+    @GetMapping("/up/{id}")
+    public Progress getUserProgress(@PathVariable Long id){
+        return progressService.getUserProgress(id);
+    }
+
     @GetMapping
     public List<Progress> getAllProgressRecords() {
         return progressService.getAllProgressRecords();

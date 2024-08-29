@@ -15,6 +15,11 @@ public class EnrolmentController {
     @Autowired
     private EnrolmentService enrollmentService;
 
+    @GetMapping("/ue/{id}")
+    public Enrolment getUsersEnroll(@PathVariable Long id){
+        return enrollmentService.getUserEnrol(id);
+    }
+
     @GetMapping
     public List<Enrolment> getAllEnrolments() {
         return enrollmentService.getAllEnrolments();

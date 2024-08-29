@@ -32,7 +32,7 @@ public class UserController {
     }
 
     @GetMapping("/userfeedback/{id}")
-    public Feedback getUserFeedback(@PathVariable Long id){
+    public List<Feedback> getUserFeedback(@PathVariable Long id){
         return userService.getFeedbackByUserId(id);
     }
 

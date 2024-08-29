@@ -8,13 +8,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import javax.swing.text.html.Option;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class FeedbackService {
     @Autowired
     private FeedbackRepository feedbackRepository;
 
+    public List<Feedback> getUserFeedback(Long userid){
+        return  feedbackRepository.findByUserId(userid);
+    }
 
     public List<Feedback> getAllFeedback() {
         return feedbackRepository.findAll();

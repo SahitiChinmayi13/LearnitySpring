@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProgressService {
@@ -20,6 +21,11 @@ public class ProgressService {
 
     public List<Progress> getAllProgressRecords() {
         return progressRepository.findAll();
+    }
+
+    public Progress getUserProgress(Long user_id){
+        Optional<Progress> up= progressRepository.findByUserId(user_id);
+        return up.orElse(null);
     }
 
     public Progress getProgressById(Long progressId) {
