@@ -5,33 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2e833d5-39cd-47c2-a316-a9f57e7c30de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CourseService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CourseService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnrolmentService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Service/CourseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Contoller/EnrolmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Contoller/EnrolmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Repository/EnrolmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Repository/EnrolmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Service/EnrolmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Service/EnrolmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnrolmentService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FeedbackService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Controller/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Repository/FeedbackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Repository/FeedbackRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Service/FeedbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Service/FeedbackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FeedbackService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgressService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Controller/ProgressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Controller/ProgressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Repository/ProgressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Repository/ProgressRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Service/ProgressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Service/ProgressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgressService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lbgateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lbgateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +45,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -67,32 +55,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CourseServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EnrolmentServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EurekaregistryserviceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FeedbackServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LbgatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProgressServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/284724/Documents/Cap_Project/UserService&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gant&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.CourseServiceApplication.executor": "Run",
+    "Application.EnrolmentServiceApplication.executor": "Run",
+    "Application.EurekaregistryserviceApplication.executor": "Run",
+    "Application.FeedbackServiceApplication.executor": "Run",
+    "Application.LbgatewayApplication.executor": "Run",
+    "Application.ProgressServiceApplication.executor": "Run",
+    "Application.UserServiceApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/284724/Documents/New folder/JwtDemo",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gant"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\284724\Documents\Cap_Project\UserService\src\main\java\com\user\UserService" />
       <recent name="C:\Users\284724\Documents\Cap_Project\ProgressService\src\main\java\com\progress\ProgressService" />
       <recent name="C:\Users\284724\Documents\Cap_Project\FeedbackService\src\main\java\com\feedback\FeedbackService" />
       <recent name="C:\Users\284724\Documents\Cap_Project\EnrolmentService\src\main\java\com\enrolment\EnrolmentService" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.test.gateway.Config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.progress.ProgressService.Model" />
@@ -102,7 +93,7 @@
       <recent name="com.feedback.FeedbackService.Model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserServiceApplication">
+  <component name="RunManager">
     <configuration name="EnrolmentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.enrolment.EnrolmentService.EnrolmentServiceApplication" />
       <module name="EnrolmentService" />
@@ -184,9 +175,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserServiceApplication" />
-        <item itemvalue="Application.FeedbackServiceApplication" />
-        <item itemvalue="Application.LbgatewayApplication" />
         <item itemvalue="Application.EurekaregistryserviceApplication" />
+        <item itemvalue="Application.LbgatewayApplication" />
+        <item itemvalue="Application.FeedbackServiceApplication" />
         <item itemvalue="Application.EnrolmentServiceApplication" />
       </list>
     </recent_temporary>

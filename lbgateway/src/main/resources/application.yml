@@ -61,5 +61,6 @@ management:
     gateway:
       enabled: true
   
-  
-  
+jwt:
+  secret: your_secret_key
+  expiration: 3600000
