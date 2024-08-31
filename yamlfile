@@ -1,0 +1,69 @@
+spring:
+  application:
+    name: UserService
+  datasource:
+    url: jdbc:mysql://localhost:3306/db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+      routes:
+
+        - id: lbservice-route
+
+          uri: lb://USERSERVICE
+
+          predicates:
+
+            - Path=/users/**
+
+
+        - id: lbservice2-route
+
+          uri: lb://COURSESERVICE
+
+          predicates:
+
+            - Path=/courses/**
+
+        - id: lbservice3-route
+
+          uri: lb://ENROLMENTSERVICE
+
+          predicates:
+
+            - Path=/enrollments/**
+
+        - id: lbservice4-route
+
+          uri: lb://PROGRESSSERVICE
+
+          predicates:
+
+            - Path=/progress/**
+
+        - id: lbservice5-route
+
+          uri: lb://FEEDBACKSERVICE
+
+          predicates:
+
+            - Path=/feedback/**
+
+
+
+
+server:
+  port : 9999
