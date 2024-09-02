@@ -1,31 +1,96 @@
 spring:
   application:
     name: UserService
+
   datasource:
-    url: jdbc:h2:mem:testdb
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: password
+    url: jdbc:mysql://localhost:3306/db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: update
-  h2:
-    console:
-      enabled: true
+      ddl-auto: update  # Consider changing to 'validate' or 'none' in production
+    show-sql: true
+
   cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: lbservice-route
+            uri: lb://COURSESERVICE
+            predicates:
+              - Path=/courses/**
+
+#          - id: lbservice12-route
+#
+#            uri: lb://USERSERVICE
+#
+#            predicates:
+#
+#              - Path=/users/**
+
+
+          - id: lbservice2-route
+
+            uri: lb://COURSESERVICE
+
+            predicates:
+
+              - Path=/courses/**
+
+          - id: lbservice3-route
+
+            uri: lb://ENROLMENTSERVICE
+
+            predicates:
+
+              - Path=/enrollments/**
+
+          - id: lbservice4-route
+
+            uri: lb://PROGRESSSERVICE
+
+            predicates:
+
+              - Path=/progress/**
+
+          - id: lbservice5-route
+
+            uri: lb://FEEDBACKSERVICE
+
+            predicates:
+
+              - Path=/feedback/**
+
+
+
     discovery:
       enabled: true
+
+    eureka:
+      client:
+        service-url:
+          defaultZone: http://localhost:8761/eureka/
+        register-with-eureka: true
+        fetch-registry: true
+
+      instance:
+        hostname: localhost
+        instance-id: ${spring.application.name}:${instanceId:${random.value}}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
-  port : 0
+  port: 9999
 
 
-eureka:
-  client:
-    registerWithEureka: true
-    fetchRegistry : true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
-    instance-id: "${spring.application.name} : ${instanceId : ${random.value}}"
+security:
+  jwt:
+    secret-key: 3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b
+    expiration-time: 86400000
+

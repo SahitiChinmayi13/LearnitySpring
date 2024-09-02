@@ -10,6 +10,7 @@ import com.user.UserService.Service.UserService.ServiceUnavailableException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -20,9 +21,10 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/{id}")
+    @GetMapping("/u/{id}")
     public ResponseEntity<User> getUserById(@PathVariable Long id) {
         try {
+            System.out.println("0" + id);
             User user = userService.getUserById(id);
             return ResponseEntity.ok(user);
         } catch (ResourceNotFoundException e) {
@@ -30,7 +32,7 @@ public class UserController {
         }
     }
 
-    @GetMapping("/coursedetail/{id}")
+    @GetMapping("/u/coursedetail/{id}")
     public ResponseEntity<Course> getUserCourseDetail(@PathVariable Long id) {
         try {
             Course course = userService.getCourseDetailsForUser(id);
@@ -42,7 +44,7 @@ public class UserController {
         }
     }
 
-    @GetMapping("/userprogress/{id}")
+    @GetMapping("/u/userprogress/{id}")
     public ResponseEntity<Progress> getUserProgress(@PathVariable Long id) {
         try {
             Progress progress = userService.getProgressByUserId(id);
@@ -66,7 +68,7 @@ public class UserController {
         }
     }
 
-    @GetMapping()
+    @GetMapping("")
     public ResponseEntity<List<User>> getAllUsers() {
         List<User> users = userService.getAllUsers();
         return ResponseEntity.ok(users);
@@ -81,7 +83,7 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
         }
     }
-
+    //@PreAuthorize("hasRole('USER')")
     @GetMapping("/username/{username}")
     public ResponseEntity<User> getUserByUsername(@PathVariable String username) {
         try {

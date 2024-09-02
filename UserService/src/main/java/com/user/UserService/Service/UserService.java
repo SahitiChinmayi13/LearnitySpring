@@ -83,9 +83,14 @@ public class UserService {
     }
 
     public User getUserByUsername(String username) {
-        return Optional.ofNullable(userRepository.findByUsername(username))
-                .orElseThrow(() -> new ResourceNotFoundException("User not found for username: " + username));
+        Optional<User> user = userRepository.findByUsername(username);
+        if (user.isPresent()) {
+            return user.get();
+        } else {
+            throw  new ResourceNotFoundException("User not found for username: " + username);
+        }
     }
+
 
     public User createUser(User user) {
         // Hash the password before saving it (implement hashing here)

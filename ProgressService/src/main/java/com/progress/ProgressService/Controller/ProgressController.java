@@ -59,7 +59,7 @@ public class ProgressController {
     }
 
     // Update an existing progress record
-    @PutMapping("/{progressId}")
+    @PutMapping("/u/{progressId}")
     public ResponseEntity<Progress> updateProgress(@PathVariable Long progressId, @RequestBody Progress progress) {
         try {
             Progress updatedProgress = progressService.updateProgress(progressId, progress);

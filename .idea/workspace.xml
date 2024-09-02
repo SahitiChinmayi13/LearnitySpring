@@ -5,21 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2e833d5-39cd-47c2-a316-a9f57e7c30de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/java/com/course/CourseService/Service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Contoller/EnrolmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Contoller/EnrolmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Service/EnrolmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/src/main/java/com/enrolment/EnrolmentService/Service/EnrolmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CourseService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CourseService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnrolmentService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnrolmentService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FeedbackService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Controller/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Service/FeedbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Service/FeedbackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FeedbackService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgressService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Controller/ProgressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Controller/ProgressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Service/ProgressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Service/ProgressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgressService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lbgateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lbgateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/src/main/java/com/test/gateway/LbgatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lbgateway/src/test/java/com/test/gateway/LbgatewayApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +63,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2l8fF2bF6JSfsa3QUjxedgM27j0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,10 +80,12 @@
     "Application.LbgatewayApplication.executor": "Run",
     "Application.ProgressServiceApplication.executor": "Run",
     "Application.UserServiceApplication.executor": "Run",
+    "JUnit.All in CourseService.executor": "Run",
+    "JUnit.All in eurekaregistryservice.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/284724/Documents/New folder/JwtDemo",
+    "last_opened_file_path": "C:/Users/284724/Documents/Cap_Project/UserService/src/main/java/com/user/UserService",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -86,20 +103,20 @@
       <recent name="com.test.gateway.Config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.progress.ProgressService.Model" />
-      <recent name="com.enrolment.EnrolmentService.Model" />
-      <recent name="com.course.CourseService.Model" />
+      <recent name="com.user.UserService.Config" />
+      <recent name="com.user.UserService.Controller" />
+      <recent name="com.user.UserService.Util" />
+      <recent name="com.user.UserService.Service" />
       <recent name="com.user.UserService.Model" />
-      <recent name="com.feedback.FeedbackService.Model" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="EnrolmentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enrolment.EnrolmentService.EnrolmentServiceApplication" />
-      <module name="EnrolmentService" />
+  <component name="RunManager" selected="Application.ProgressServiceApplication">
+    <configuration name="CourseServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.course.CourseService.CourseServiceApplication" />
+      <module name="CourseService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enrolment.EnrolmentService.*" />
+          <option name="PATTERN" value="com.course.CourseService.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaregistryserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.iist.registry.EurekaregistryserviceApplication" />
-      <module name="eurekaregistryservice" />
+    <configuration name="EnrolmentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enrolment.EnrolmentService.EnrolmentServiceApplication" />
+      <module name="EnrolmentService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.iist.registry.*" />
+          <option name="PATTERN" value="com.enrolment.EnrolmentService.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +150,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LbgatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.gateway.LbgatewayApplication" />
-      <module name="lb-gateway" />
+    <configuration name="ProgressServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.progress.ProgressService.ProgressServiceApplication" />
+      <module name="ProgressService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.gateway.*" />
+          <option name="PATTERN" value="com.progress.ProgressService.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserServiceApplication" />
-        <item itemvalue="Application.EurekaregistryserviceApplication" />
-        <item itemvalue="Application.LbgatewayApplication" />
+        <item itemvalue="Application.ProgressServiceApplication" />
         <item itemvalue="Application.FeedbackServiceApplication" />
+        <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.EnrolmentServiceApplication" />
+        <item itemvalue="Application.CourseServiceApplication" />
       </list>
     </recent_temporary>
   </component>

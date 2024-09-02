@@ -26,7 +26,7 @@ public class FeedbackController {
         }
     }
 
-    @PostMapping
+    @PostMapping("/u")
     public ResponseEntity<Feedback> createFeedback(@RequestBody Feedback feedback) {
         try {
             Feedback createdFeedback = feedbackService.createFeedback(feedback);
