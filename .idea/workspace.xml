@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e2e833d5-39cd-47c2-a316-a9f57e7c30de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/responses/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/responses/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Cap_stone" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/avatar.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/logo.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
