@@ -4,6 +4,7 @@ public class LoginResponse {
     private String token;
 
     private long expiresIn;
+    private String role;
 
     public String getToken() {
         return token;
@@ -23,11 +24,21 @@ public class LoginResponse {
         return this;
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public LoginResponse setRole(String role) {
+        this.role = role;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "LoginResponse{" +
                 "token='" + token + '\'' +
                 ", expiresIn=" + expiresIn +
+                "role='" + role + '\'' +
                 '}';
     }
 }

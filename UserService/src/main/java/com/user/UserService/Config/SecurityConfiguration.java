@@ -10,6 +10,9 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -29,14 +32,28 @@ public class SecurityConfiguration {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        CorsConfiguration config = new CorsConfiguration();
+        config.setAllowCredentials(true);
+        config.addAllowedOriginPattern("http://localhost:4200"); // Replace with your client URL
+        config.addAllowedHeader("*"); // Allow all headers
+        config.addAllowedMethod("*"); // Allow all HTTP methods
+        source.registerCorsConfiguration("/**", config);
+
+
         http
+                .cors(cors -> cors.configurationSource(source))
                 .csrf(csrf -> csrf.disable())
 
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/**").permitAll() // Allowing requests to /auth/**
-                        .requestMatchers("/users/**", "/courses/**", "/enrollments/**", "/progress/**", "/feedback/**").hasRole("ADMIN") // Only ADMIN can access /admin/**
-                        .requestMatchers("/users/u/**", "/feedback/u/**", "/progress/u/**").hasRole("USER") // Only USER can access /user/**
-                        .anyRequest().authenticated() // Securing all other endpoints
+                        .requestMatchers("/auth/**").permitAll()
+                                // Allowing requests to /auth/**
+                                .requestMatchers("/users/**", "/feedback/u/**", "/progress/u/**").hasRole("USER")
+                        .requestMatchers("/admin/**", "/courses/**", "/enrollments/**", "/progress/**", "/feedback/**").hasRole("ADMIN") // Only ADMIN can access /admin/**
+                         // Only USER can access /user/**
+                        .anyRequest().authenticated()
+                        // Securing all other endpoints
                 )
 
                 .sessionManagement(session -> session
@@ -47,5 +64,6 @@ public class SecurityConfiguration {
 
         return http.build();
     }
+
 
 }

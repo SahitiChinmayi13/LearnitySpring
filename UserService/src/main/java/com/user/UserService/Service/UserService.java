@@ -91,6 +91,9 @@ public class UserService {
         }
     }
 
+    public Role getRole1(String username){
+        return userRepository.findUserRoleByUsername(username);
+    }
 
     public User createUser(User user) {
         // Hash the password before saving it (implement hashing here)

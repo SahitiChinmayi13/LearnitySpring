@@ -5,33 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2e833d5-39cd-47c2-a316-a9f57e7c30de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Util/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CourseService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CourseService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CourseService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnrolmentService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnrolmentService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EnrolmentService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FeedbackService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/src/main/java/com/feedback/FeedbackService/Controller/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FeedbackService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FeedbackService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgressService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Controller/ProgressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/src/main/java/com/progress/ProgressService/Controller/ProgressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgressService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProgressService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/AuthenticationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/src/main/java/com/test/gateway/LbgatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lbgateway/src/test/java/com/test/gateway/LbgatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/responses/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/user/UserService/responses/LoginResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +90,7 @@
       <recent name="com.user.UserService.Model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProgressServiceApplication">
+  <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="CourseServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.course.CourseService.CourseServiceApplication" />
       <module name="CourseService" />
@@ -191,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProgressServiceApplication" />
-        <item itemvalue="Application.FeedbackServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
-        <item itemvalue="Application.EnrolmentServiceApplication" />
+        <item itemvalue="Application.ProgressServiceApplication" />
         <item itemvalue="Application.CourseServiceApplication" />
+        <item itemvalue="Application.EnrolmentServiceApplication" />
+        <item itemvalue="Application.FeedbackServiceApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -1,21 +1,17 @@
 package com.user.UserService.Controller;
 
-import com.user.UserService.Model.Course;
-import com.user.UserService.Model.Feedback;
-import com.user.UserService.Model.Progress;
-import com.user.UserService.Model.User;
+import com.user.UserService.Model.*;
 import com.user.UserService.Service.UserService;
 import com.user.UserService.Service.UserService.ResourceNotFoundException;
 import com.user.UserService.Service.UserService.ServiceUnavailableException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/admin")
 public class UserController {
 
     @Autowired
@@ -74,6 +70,11 @@ public class UserController {
         return ResponseEntity.ok(users);
     }
 
+    @GetMapping("/u/role/{username}")
+    public ResponseEntity<Role> getRole(@PathVariable String username){
+        System.out.println("vishal" + userService.getRole1(username));
+        return ResponseEntity.ok().body(userService.getRole1(username));
+    }
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {
         try {
