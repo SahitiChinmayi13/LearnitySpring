@@ -15,9 +15,9 @@ import lombok.NoArgsConstructor;
 public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Course_id;
+    private long Course_id;
     private String title;
     private String description;
-    private String duration;
+    private int duration; //no of hours
     private int module; // no of modules in courses
 }

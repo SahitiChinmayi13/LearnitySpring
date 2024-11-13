@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/courses")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class CourseController {
 
     @Autowired
@@ -29,15 +30,16 @@ public class CourseController {
     }
 
     // Retrieve all courses
-    @GetMapping()
+    @GetMapping("/allCourses")
     public ResponseEntity<List<Course>> getAllCourses() {
         List<Course> courses = courseService.getAllCourses();
         return ResponseEntity.ok(courses);
     }
 
     // Create a new course
-    @PostMapping
+    @PostMapping("/addCourse")
     public ResponseEntity<Course> createCourse(@RequestBody Course course) {
+    	System.out.println("Received course data: " + course);
         try {
             Course createdCourse = courseService.createCourse(course);
             return ResponseEntity.status(HttpStatus.CREATED).body(createdCourse);
@@ -48,7 +50,7 @@ public class CourseController {
     }
 
     // Update an existing course
-    @PutMapping("/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<Course> updateCourse(@PathVariable Long id, @RequestBody Course course) {
         try {
             Course updatedCourse = courseService.updateCourse(id, course);
@@ -63,7 +65,7 @@ public class CourseController {
     }
 
     // Delete a course by its ID
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> deleteCourse(@PathVariable Long id) {
         try {
             courseService.deleteCourse(id);
