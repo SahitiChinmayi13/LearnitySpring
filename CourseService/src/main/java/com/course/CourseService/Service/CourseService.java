@@ -1,17 +1,26 @@
 package com.course.CourseService.Service;
 
-import com.course.CourseService.Model.Course;
-import com.course.CourseService.Repository.CourseRepository;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.course.CourseService.Model.Course;
+import com.course.CourseService.Model.CourseUserMapping;
+import com.course.CourseService.Model.UserCourseDto;
+import com.course.CourseService.Repository.CourseRepository;
+import com.course.CourseService.Repository.CourseUserMappingRepository;
 
 @Service
 public class CourseService {
 
     @Autowired
     private CourseRepository courseRepository;
+    
+    @Autowired
+    private CourseUserMappingRepository mappingRepository;
+
 
     // Retrieve a course by its ID, throwing an exception if not found
     public Course getCourseById(Long id) {
@@ -48,6 +57,20 @@ public class CourseService {
         } else {
             throw new ResourceNotFoundException("Course not found for id: " + id);
         }
+    }
+    
+    public List<Course> getEnrolledCourses(Long userId) {
+        List<CourseUserMapping> mappings = mappingRepository.findByUserId(userId);
+        return mappings.stream()
+            .map(mapping -> getCourseById(mapping.getCourseId()))
+            .collect(Collectors.toList());
+    }
+
+    public void enrollUserInCourse(UserCourseDto userCourseDto) {
+        CourseUserMapping mapping = new CourseUserMapping();
+        mapping.setUserId(userCourseDto.getUserId());
+        mapping.setCourseId(userCourseDto.getCourseId());
+        mappingRepository.save(mapping);
     }
 
     // Custom exception class for handling resource not found scenarios

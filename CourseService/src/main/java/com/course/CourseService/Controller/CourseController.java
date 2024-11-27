@@ -1,14 +1,23 @@
 package com.course.CourseService.Controller;
 
-import com.course.CourseService.Model.Course;
-import com.course.CourseService.Service.CourseService;
-import com.course.CourseService.Service.CourseService.ResourceNotFoundException;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import com.course.CourseService.Model.Course;
+import com.course.CourseService.Model.UserCourseDto;
+import com.course.CourseService.Service.CourseService;
+import com.course.CourseService.Service.CourseService.ResourceNotFoundException;
 
 @RestController
 @RequestMapping("/courses")
@@ -72,6 +81,25 @@ public class CourseController {
             return ResponseEntity.noContent().build();
         } catch (ResourceNotFoundException e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+    }
+    @GetMapping("/user/{userId}/enrolled")
+    public ResponseEntity<List<Course>> getEnrolledCourses(@PathVariable Long userId) {
+        try {
+            List<Course> courses = courseService.getEnrolledCourses(userId);
+            return ResponseEntity.ok(courses);
+        } catch (ResourceNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
+    }
+
+    @PostMapping("/enroll")
+    public ResponseEntity<Void> enrollUserInCourse(@RequestBody UserCourseDto userCourseDto) {
+        try {
+            courseService.enrollUserInCourse(userCourseDto);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         }
     }
 }

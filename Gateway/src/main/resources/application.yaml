@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: Gateway
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+        - id: COURSESERVICE
+          uri: lb://COURSESERVICE
+          predicates:
+            - Path=/courses/**
+
+        - id: IDENTITYSERVICE
+          uri: lb://IDENTITYSERVICE
+          predicates:
+            - Path=/auth/**, /users/**, /admin/**
+          filters:
+            - AuthenticationFilter
+
+        - id: PROGRESSSERVICE
+          uri: lb://PROGRESSSERVICE
+          predicates:
+            - Path=/progress/**
+
+        - id: FEEDBACKSERVICE
+          uri: lb://FEEDBACKSERVICE
+          predicates:
+            - Path=/feedback/**
+
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+security:
+  jwt:
+    secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expiration-time: 86400000
