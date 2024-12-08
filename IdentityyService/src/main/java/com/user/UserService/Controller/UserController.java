@@ -24,7 +24,7 @@ import com.user.UserService.dtos.FeedbackDto;
 import com.user.UserService.dtos.ProgressDto;
 
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
